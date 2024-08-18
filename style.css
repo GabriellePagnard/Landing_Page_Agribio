@@ -1,0 +1,13 @@
+/* Styles supplémentaires */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background: url('images/hero-background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
