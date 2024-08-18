@@ -4,61 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Agribio</title>
     <!-- Import Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body class="bg-green-50 font-sans leading-normal tracking-normal">
 
-    <!-- Section d'en-tête -->
-    <header class="bg-blue-900 text-white">
-        <div class="container mx-auto flex flex-col items-center py-12">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Bienvenue sur notre Landing Page</h1>
-            <p class="text-lg md:text-xl text-center mb-8">Découvrez notre service incroyable qui va changer votre quotidien !</p>
-            <a href="#features" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg">En savoir plus</a>
+    <!-- Section d'en-tête avec une image de fond naturelle -->
+    <header class="bg-cover bg-center h-screen text-white" style="background-image: url('ressources/home.jpg');">
+        <div class="container mx-auto flex flex-col items-center justify-center h-full">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 text-center">Agribio</h1>
+            <p class="text-lg md:text-2xl text-center mb-8">Des fruits  et légumes bio, locaux, et cultivés avec passion pour une alimentation plus saine.</p>
+            <a href="#products" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full transition transform hover:scale-105">Découvrir nos produits</a>
         </div>
     </header>
 
-    <!-- Section des fonctionnalités -->
-    <section id="features" class="py-12 bg-white">
+    <!-- Section Présentation des produits -->
+    <section id="products" class="py-16 bg-white">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Nos Fonctionnalités</h2>
+            <h2 class="text-4xl font-bold mb-8 text-green-800">Nos Produits</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Fonctionnalité 1</h3>
-                    <p>Une description rapide de cette fonctionnalité étonnante.</p>
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    <img src="ressources/fruits.jpg" alt="Fruits Bio" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Fruits Bio</h3>
+                    <p class="text-green-700">Des fruits de saison, frais et cultivés dans le respect de la nature.</p>
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Fonctionnalité 2</h3>
-                    <p>Un autre aspect incroyable de notre service.</p>
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    <img src="ressources/legumes.jpg" alt="Légumes Bio" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Légumes Bio</h3>
+                    <p class="text-green-700">Des légumes frais, gorgés de nutriments et de saveurs authentiques.</p>
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Fonctionnalité 3</h3>
-                    <p>Découvrez les avantages que vous obtenez en utilisant notre service.</p>
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    <img src="ressources/producteur.jpg" alt="Direct du Producteur" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Direct du Producteur</h3>
+                    <p class="text-green-700">Sans intermédiaires, directement de la ferme à votre table.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section d'appel à l'action -->
-    <section class="py-12 bg-blue-900 text-white">
+    <!-- Section Appel à l'Action -->
+    <section class="py-16 bg-green-800 text-white">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Prêt à essayer ?</h2>
-            <p class="mb-8">Rejoignez-nous dès maintenant et profitez de tous les avantages de notre service.</p>
-            <button onclick="showMessage()" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg">S'inscrire maintenant</button>
+            <h2 class="text-3xl font-bold mb-4">Rejoignez notre communauté Bio</h2>
+            <p class="mb-8">Profitez de nos produits frais, naturels et engagés pour une meilleure santé.</p>
+            <button onclick="showAlert()" class="bg-yellow-500 hover:bg-yellow-600 text-gray-800 font-bold py-4 px-8 rounded-full transition transform hover:scale-105">S'inscrire Maintenant</button>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-green-800">Ce que disent nos clients</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg">
+                    <p class="text-green-700 italic">"Des produits incroyablement frais et un goût incomparable. Je recommande vivement !"</p>
+                    <h4 class="font-semibold mt-4">- Marie</h4>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg">
+                    <p class="text-green-700 italic">"Enfin des fruits et légumes bio à un prix abordable, avec la garantie du circuit court."</p>
+                    <h4 class="font-semibold mt-4">- Jean</h4>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-lg">
+                    <p class="text-green-700 italic">"Le service client est excellent et la qualité des produits est exceptionnelle."</p>
+                    <h4 class="font-semibold mt-4">- Claire</h4>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Section de pied de page -->
-    <footer class="bg-gray-800 text-gray-400 py-6">
+    <footer class="bg-green-900 text-green-200 py-8">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Votre Société. Tous droits réservés.</p>
+            <p>&copy; 2024 Fruits & Légumes Bio. Tous droits réservés.</p>
+            <p class="mt-4"><a href="#" class="hover:underline">Politique de Confidentialité</a> | <a href="#" class="hover:underline">Mentions Légales</a></p>
         </div>
     </footer>
 
-    <!-- Inclusion du script JavaScript -->
+    <!-- Script JavaScript -->
+    <script>
+        function showAlert() {
+            alert("Merci pour votre inscription ! Nous vous contacterons très bientôt.");
+        }
+    </script>
     <script src="app.js"></script>
 </body>
 

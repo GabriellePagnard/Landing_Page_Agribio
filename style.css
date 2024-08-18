@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background: url('images/hero-background.jpg') no-repeat center center;
+    background: url('ressources/home.jpg') no-repeat center center;
     background-size: cover;
 }
 
