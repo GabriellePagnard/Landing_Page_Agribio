@@ -11,3 +11,30 @@ header {
 h1, h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+/* Styles pour la pop-up */
+#popup {
+    z-index: 50; /* S'assure que la pop-up est au-dessus des autres éléments */
+}
+
+#popup h2 {
+    color: #002104; 
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+#popup p {
+    color: #002104; 
+}
+
+#close-popup {
+    background-color: #ffd82c; 
+    color: #002104; 
+    border-radius: 0.375rem; /* Arrondis légers */
+    transition: all 0.3s ease;
+}
+
+#close-popup:hover {
+    background-color: #aeee95; 
+    color: #002104; /* Couleur de texte en survol */
+    transform: scale(1.05);
+}

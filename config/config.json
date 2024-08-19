@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "lctteam",
+    "password": "lctteam",
+    "database": "agribio",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "lctteam",
+    "password": "lctteam",
+    "database": "agribio",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
