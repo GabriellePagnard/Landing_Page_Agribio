@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agribio</title>
+    <title>AgriBio</title>
     <!-- Import Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -13,72 +13,143 @@
 <body class="bg-green-50 font-sans leading-normal tracking-normal">
 
     <!-- Section d'en-tête avec une image de fond naturelle -->
-    <header class="bg-cover bg-center h-screen text-white" style="background-image: url('ressources/home.jpg');">
-        <div class="container mx-auto flex flex-col items-center justify-center h-full">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 text-center">Agribio</h1>
-            <p class="text-lg md:text-2xl text-center mb-8">Des fruits  et légumes bio, locaux, et cultivés avec passion pour une alimentation plus saine.</p>
-            <a href="#products" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full transition transform hover:scale-105">Découvrir nos produits</a>
+    <header class="relative h-screen bg-cover bg-center" style="background-image: url('ressources/recolte.jpg');">
+        <!-- Effet de flou ajouté derrière le texte pour un effet de contraste -->
+        <div class="absolute inset-0 bg-black bg-opacity-30 filter blur"></div>
+        <!-- Texte net par-dessus le flou -->
+        <div class="relative container mx-auto flex flex-col items-center justify-center h-full z-10 text-[#A39E5E] text-center">
+            <h1 class="text-white text-8xl md:text-6xl font-bold mb-4 drop-shadow-lg">AgriBio</h1>
+            <p class="text-white text-lg md:text-3xl mb-8 drop-shadow-lg">Des fruits et légumes bio, locaux, et cultivés avec passion pour une alimentation plus saine.</p>
+            <a href="#products" class="bg-yellow-400 hover:bg-yellow-200 hover:text-green-900 text-yellow-900 font-bold py-4 px-8 rounded-md transition transform hover:scale-105 uppercase">Découvrir nos produits</a>
         </div>
     </header>
 
     <!-- Section Présentation des produits -->
     <section id="products" class="py-16 bg-white">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8 text-green-800">Nos Produits</h2>
+            <h2 class="text-4xl font-bold mb-8 text-yellow-900 uppercase">Nos Produits</h2>
+            <br>
+            <br>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-green-50 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
-                    <img src="ressources/fruits.jpg" alt="Fruits Bio" class="rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-2">Fruits Bio</h3>
-                    <p class="text-green-700">Des fruits de saison, frais et cultivés dans le respect de la nature.</p>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    <img src="ressources/panier_fruits.jpg" alt="Fruits Bio" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-900 uppercase">Fruits Bio</h3>
+                    <p class="text-yellow-900">Des fruits de saison, récoltés à maturité pour offrir le meilleur de la nature à chaque bouchée. Cultivés dans le respect des sols et sans produits chimiques, nos fruits allient fraîcheur et saveurs authentiques. Croquez dans une pomme, savourez une fraise juteuse ou dégustez des abricots sucrés, tout en ayant la certitude de consommer des produits sains et respectueux de l’environnement.</p>
                 </div>
-                <div class="bg-green-50 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
-                    <img src="ressources/legumes.jpg" alt="Légumes Bio" class="rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-2">Légumes Bio</h3>
-                    <p class="text-green-700">Des légumes frais, gorgés de nutriments et de saveurs authentiques.</p>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    <img src="ressources/panier_légumes.jpg" alt="Légumes Bio" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-900 uppercase">Légumes Bio</h3>
+                    <p class="text-yellow-900">Nos légumes sont un concentré de nutriments et de goûts. Ils sont cultivés dans des conditions naturelles, sans pesticides ni engrais de synthèse, pour vous garantir des saveurs brutes et authentiques. Du croquant de la carotte à la douceur de la courgette, chaque légume raconte l’histoire de notre engagement pour une agriculture responsable et de saison.</p>
                 </div>
-                <div class="bg-green-50 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
-                    <img src="ressources/producteur.jpg" alt="Direct du Producteur" class="rounded-lg mb-4">
-                    <h3 class="text-2xl font-semibold mb-2">Direct du Producteur</h3>
-                    <p class="text-green-700">Sans intermédiaires, directement de la ferme à votre table.</p>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    <img src="ressources/champs_citrouilles.jpg" alt="Direct du Producteur" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-900 uppercase">Direct du Producteur</h3>
+                    <p class="text-yellow-900">Chez AgriBio, nous faisons le choix du circuit court. Pas de passage en chambre froide ou de longs trajets inutiles. Nos fruits et légumes vous arrivent directement du producteur, préservant ainsi leur fraîcheur et leur qualité. C’est aussi un moyen de valoriser le travail des agriculteurs locaux, en assurant une rémunération juste et en renforçant le lien entre producteurs et consommateurs.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Appel à l'Action -->
-    <section class="py-16 bg-green-800 text-white">
+    <!-- Section Notre Concept -->
+    <section class="py-16 bg-white">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">Rejoignez notre communauté Bio</h2>
-            <p class="mb-8">Profitez de nos produits frais, naturels et engagés pour une meilleure santé.</p>
-            <button onclick="showAlert()" class="bg-yellow-500 hover:bg-yellow-600 text-gray-800 font-bold py-4 px-8 rounded-full transition transform hover:scale-105">S'inscrire Maintenant</button>
+            <h2 class="text-4xl font-bold mb-8 text-yellow-900 uppercase">Notre Concept</h2>
+            <p class="text-yellow-900 mb-6">Chez AgriBio, nous croyons en une agriculture durable et respectueuse, où chaque fruit et légume est cultivé en harmonie avec la nature. Nos produits ne sont pas seulement bio, ils sont le reflet de notre engagement profond pour une alimentation saine, savoureuse et responsable.</p>
+            <br>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    <img src="ressources/proteger.jpg" alt="Fruits Bio" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-900 uppercase">Respect de la Nature</h3>
+                    <p class="text-yellow-900">Nous cultivons nos terres sans pesticides chimiques ni engrais de synthèse, en suivant les cycles naturels des saisons. Nos méthodes de culture visent à préserver l’équilibre des sols et encourager la biodiversité. Chaque récolte est un hommage à la richesse de notre terroir et à la vie qui s’y épanouit.</p>
+                </div>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    <img src="ressources/circuit_court.jpg" alt="Fruits Bio" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-900 uppercase">Circuit Court</h3>
+                    <p class="text-yellow-900">La fraîcheur de nos produits est notre priorité. C’est pourquoi nous favorisons les circuits courts : de nos champs à votre table, sans détours inutiles. En choisissant AgriBio, vous soutenez des producteurs locaux passionnés, tout en dégustant des produits qui ont conservé toutes leurs qualités nutritives et gustatives.</p>
+                </div>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    <img src="ressources/engagement_ecologique.jpg" alt="Fruits Bio" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-900 uppercase">Engagement Écologique</h3>
+                    <p class="text-yellow-900">Nous savons que chaque geste compte pour la planète. Nous réduisons notre empreinte carbone en optimisant les trajets et en privilégiant les emballages écologiques. Acheter chez AgriBio, c’est choisir des produits bons pour votre santé et pour la planète, tout en participant à un modèle économique plus solidaire.</p>
+                </div>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg transform hover:scale-105 transition">
+                    <img src="ressources/conscient_et_savoureux.jpg" alt="Fruits Bio" class="rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2 text-yellow-900 uppercase">Un Choix Conscient et Savoureux</h3>
+                    <p class="text-yellow-900">Avec AgriBio, vous faites plus qu’acheter des fruits et légumes : vous rejoignez un mouvement pour une agriculture responsable et un mode de vie plus sain. Ensemble, cultivons le goût du bon, du bio, et de l’engagement pour l’avenir de notre planète.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Qui sommes nous avec image à gauche et texte à droite -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <img src="ressources/panier_bio.png" alt="Qui sommes nous" class="rounded-lg shadow-lg">
+            </div>
+            <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+                <h2 class="text-4xl font-bold mb-4 text-yellow-900 uppercase">Qui sommes-nous ?</h2>
+
+                <br>
+                <br>
+
+                <p class="text-yellow-900 mb-6">Chez AgriBio, nous sommes avant tout des passionnés de nature et de saveurs authentiques. Notre aventure a commencé avec une conviction simple : il est possible de produire des fruits et légumes d'une qualité exceptionnelle tout en respectant notre planète. Chaque jour, nous travaillons main dans la main avec des agriculteurs engagés, qui partagent nos valeurs et notre amour pour une agriculture respectueuse, durable et 100% bio.</p>
+
+                <p class="text-yellow-900 mb-6">Nous croyons fermement à l’importance de savoir d’où viennent nos aliments. C’est pourquoi nous avons fait le choix du circuit court : nos produits viennent directement des champs à votre table, sans intermédiaires. En privilégiant cette approche, nous assurons des produits toujours frais, cueillis à maturité et riches en goût. Mais surtout, nous soutenons les producteurs locaux qui s’investissent quotidiennement pour offrir le meilleur tout en préservant les ressources naturelles.</p>
+
+                <p class="text-yellow-900 mb-6">AgriBio, c’est aussi une histoire de transparence et de confiance. Nous voulons vous offrir des produits que nous serions fiers de servir à nos propres familles. Des produits sains, savoureux et bons pour la santé, mais aussi pour la planète. Ensemble, construisons une alimentation plus responsable, plus locale, et faisons de chaque repas un moment de plaisir partagé.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Appel à l'Action -->
+    <section class="py-16 bg-green-900 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4 uppercase">Ne ratez plus nos récoltes 🌱</h2>
+            <p class="mb-8 text-center">Inscrivez-vous à notre newsletter et recevez en avant-première nos offres exclusives, les actualités de nos producteurs et des conseils pour mieux consommer bio et local. Rejoignez la communauté AgriBio et faites le plein de fraîcheur, directement dans votre boîte mail !</p>
+            <button onclick="showAlert()" class="bg-yellow-400 hover:bg-yellow-200 hover:text-green-900 text-yellow-900 font-bold py-4 px-8 rounded-md transition transform hover:scale-105 uppercase">S'inscrire Maintenant</button>
         </div>
     </section>
 
     <!-- Section Témoignages -->
     <section class="py-16 bg-white">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8 text-green-800">Ce que disent nos clients</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-green-50 p-6 rounded-lg shadow-lg">
-                    <p class="text-green-700 italic">"Des produits incroyablement frais et un goût incomparable. Je recommande vivement !"</p>
-                    <h4 class="font-semibold mt-4">- Marie</h4>
+            <h2 class="text-4xl font-bold mb-8 text-yellow-900 uppercase">Ce que disent nos clients</h2>
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-8">
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg">
+                    <h4 class="font-semibold mt-4 text-yellow-900">⭐️⭐️⭐️⭐️⭐️ Camille D.</h4>
+                    <p class="text-yellow-900 italic">“Depuis que j'ai découvert AgriBio, je ne peux plus acheter mes fruits et légumes ailleurs. Les produits sont toujours ultra frais, on sent vraiment la différence dans le goût. Et savoir que tout vient directement du producteur, c'est un vrai plus pour moi !”</p>
+                    
                 </div>
-                <div class="bg-green-50 p-6 rounded-lg shadow-lg">
-                    <p class="text-green-700 italic">"Enfin des fruits et légumes bio à un prix abordable, avec la garantie du circuit court."</p>
-                    <h4 class="font-semibold mt-4">- Jean</h4>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg">
+                    <h4 class="font-semibold mt-4 text-yellow-900">⭐️⭐️⭐️⭐️⭐️ Julien L.</h4>
+                    <p class="text-yellow-900 italic">“Une qualité irréprochable et un service au top ! Les légumes sont gorgés de saveurs, ça change des produits standards qu'on trouve en grande surface. Je suis ravi de contribuer à une agriculture plus respectueuse tout en régalant ma famille.”</p>
                 </div>
-                <div class="bg-green-50 p-6 rounded-lg shadow-lg">
-                    <p class="text-green-700 italic">"Le service client est excellent et la qualité des produits est exceptionnelle."</p>
-                    <h4 class="font-semibold mt-4">- Claire</h4>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg">
+                    <h4 class="font-semibold mt-4 text-yellow-900">⭐️⭐️⭐️⭐️⭐️ Sophie M.</h4>
+                    <p class="text-yellow-900 italic">“Le circuit court dans toute sa splendeur ! Les fruits et légumes sont frais, savoureux, et livrés rapidement. Mention spéciale pour les emballages écoresponsables, c’est exactement ce que je cherchais pour réduire mon impact environnemental.”</p>
+                </div>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg">
+                    <h4 class="font-semibold mt-4 text-yellow-900">⭐️⭐️⭐️⭐️ Marc P.</h4>
+                    <p class="text-yellow-900 italic">“J’ai enfin retrouvé le goût des vrais légumes comme ceux du jardin de mes grands-parents. C’est un plaisir de cuisiner des produits aussi frais et naturels. En plus, l’équipe est super réactive et à l’écoute !”</p>
+                    
+                </div>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg">
+                    <h4 class="font-semibold mt-4 text-yellow-900">⭐️⭐️⭐️⭐️⭐️ Emma R.</h4>
+                    <p class="text-yellow-900 italic">“Les produits sont toujours d’une grande qualité, on sent qu’ils ont été cultivés avec soin et respect. C’est devenu un rendez-vous hebdomadaire pour toute la famille. Un service parfait pour ceux qui veulent manger sain tout en soutenant les producteurs locaux.”</p>
+                </div>
+                <div class="bg-yellow-100 p-6 rounded-lg shadow-lg">
+                    <h4 class="font-semibold mt-4 text-yellow-900">⭐️⭐️⭐️⭐️ Pauline G.</h4>
+                    <p class="text-yellow-900 italic">“Une belle découverte ! Je cherchais une alternative locale et bio pour mes courses, et AgriBio a été une vraie révélation. Les fruits et légumes sont délicieux et l’engagement écologique de l’équipe est très appréciable.”</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section de pied de page -->
-    <footer class="bg-green-900 text-green-200 py-8">
+    <footer class="bg-green-900 text-white py-8">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Fruits & Légumes Bio. Tous droits réservés.</p>
+            <p>&copy; 2024 AgriBio. Tous droits réservés.</p>
             <p class="mt-4"><a href="#" class="hover:underline">Politique de Confidentialité</a> | <a href="#" class="hover:underline">Mentions Légales</a></p>
         </div>
     </footer>
