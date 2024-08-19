@@ -6,9 +6,14 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
+/**
+ * Route POST pour l'inscription à la newsletter
+ * @route POST /api/newsletter
+ * @param {string} req.body.email - L'adresse email à enregistrer
+ */
 app.post('/api/newsletter', async (req, res) => {
     const email = req.body.email;
-    // Logique pour ajouter l'email à la base de données
+
     try {
         // Enregistrement de l'email dans la base de données
         await Newsletter.create({ email });

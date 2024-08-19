@@ -1,13 +1,15 @@
-/* Styles supplémentaires */
+/* Styles supplémentaires pour le corps de la page */
 body {
     font-family: 'Inter', sans-serif;
 }
 
+/* Styles pour le header */
 header {
     background: url('ressources/home.jpg') no-repeat center center;
     background-size: cover;
 }
 
+/* Styles pour les titres */
 h1, h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -17,6 +19,7 @@ h1, h2 {
     z-index: 50; /* S'assure que la pop-up est au-dessus des autres éléments */
 }
 
+/* Couleurs et ombrages pour la pop-up */
 #popup h2 {
     color: #002104; 
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
@@ -26,6 +29,7 @@ h1, h2 {
     color: #002104; 
 }
 
+/* Styles pour le bouton de fermeture de la pop-up */
 #close-popup {
     background-color: #ffd82c; 
     color: #002104; 
